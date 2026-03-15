@@ -14,3 +14,7 @@ example). xUnit tests are required.
 4. Yes (to implementation plan) 
 5. can you explain how the code works? what's with all the selfs? I'm used to C++. 
 6. I added two tests from chatgpt in addition to the existing ones. Why aren't they working (only shows 6 successful, not 8)
+7. i see 9 test cases here but only 8 in the test class - which one is missing? (screenshot of sprint1 table attached)
+8. can you replace the current test cases (save the chatgpt ones which should just be modified) to make it so it tests each 
+of these 9 user stories from the table
+9. Yes (to implementation plan)
