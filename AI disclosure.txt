@@ -18,3 +18,4 @@ example). xUnit tests are required.
 8. can you replace the current test cases (save the chatgpt ones which should just be modified) to make it so it tests each 
 of these 9 user stories from the table
 9. Yes (to implementation plan)
+10. Please update comments and spacing (not including AI disclosure) to the PEP 8 style guide. Brief comments are best. 
