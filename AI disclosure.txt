@@ -23,3 +23,19 @@ Perhaps explanations as well, I'll take those out later.
 4. For copied tables provided, can you write an expansion for each reflecting the new testing environment and pass/fail state? 
 Leave empty boxes for manual tests, maybe just brief instructions
 
+5. I got some recommendations from AI regarding modularity, cohesion, coupling, and encapsulation. If you have any other suggestions as well please feel free to modfy those as well!
+Move randomize() logic into PegSolitaireBase as a randomize_board() method, keeping board mutation inside the class that owns the board.
+Prefix board as _board and add a get_board() method returning a copy (or expose read-only indexing) to enforce encapsulation.
+Add a get_all_valid_moves() to the base class (or make it callable from ManualGame too), since the GUI's is_game_over() check already implicitly needs this logic — it's currently duplicated between is_game_over and get_all_valid_moves in AutomatedGame
+
+
+6. Demonstration (9 points)
+Submit a video of no more than five minutes, clearly demonstrating the following features.
+(a) A manual game until the game is over for English board
+(b) A manual game until the game is over for Hexagon board
+(c) An automated game until the game is over
+(d) A manual game with periodic randomization of states until the game is over
+(e) Some automated unit tests for the manual game mode
+(f) Some automated unit tests for the automated game mode
+
+my tests just say okay - what do i do to show this?
