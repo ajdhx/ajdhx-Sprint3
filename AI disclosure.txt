@@ -1,41 +1,15 @@
 
 AI disclosure:
 
-The following prompts were used with an AI language model in either an AI development environment or in a chat interface during the development of this work.
+The following prompts were used with an AI language model in either an AI development environment or in a chat interface during the development sprint4 specifically. 
 
-1. Can you help me:
+1. Can you add a replay mode which notates the moves using some text based format and displays
+both the text and final gamestate when that arrives. With a new record button, no matter whether
+it is a manual or automatic game, whether there are randomizes or not, it should notate. The notations
+can be saved as a text file at the end of the game with a user prompted name, and the replay button
+will open said folder and replay any game from a txt file selected. 
 
-Implement all the features that support a human player to play a manual or automated Solitaire game against a
-human opponent and refactor your existing code if necessary. The minimum features include choosing the game
-mode (manual or automated), choosing the board size, setting up a new game, making a move (in a manual
-or automated game), randomize the state of the board and determining if a manual or automated game is
-over. The following is a sample GUI layout. It is required to use a class hierarchy to deal with the common
-requirements of the Manual Game and the Automated Game. If your code for Sprint 2 has not considered class
-hierarchy, it is time to refactor your code.
+2. Looks good, make sure the move text and final state is recorded in some notation. I did notice sometimes it didn't say you lost, 
+just "no moves remaining" which should display you lost if there's still pegs on the board. Make sure that's fixed in general and 
+as well for the replay and replay notation. 
 
-The codebase for the previous sprint is in this file itself. 
-
-2. Can you make sure to comment all changes in the code for review/necessary changes? 
-Perhaps explanations as well, I'll take those out later.
-
-3. Can you confirm all tests were updated in accordance with new information provided?
-
-4. For copied tables provided, can you write an expansion for each reflecting the new testing environment and pass/fail state? 
-Leave empty boxes for manual tests, maybe just brief instructions
-
-5. I got some recommendations from AI regarding modularity, cohesion, coupling, and encapsulation. If you have any other suggestions as well please feel free to modfy those as well!
-Move randomize() logic into PegSolitaireBase as a randomize_board() method, keeping board mutation inside the class that owns the board.
-Prefix board as _board and add a get_board() method returning a copy (or expose read-only indexing) to enforce encapsulation.
-Add a get_all_valid_moves() to the base class (or make it callable from ManualGame too), since the GUI's is_game_over() check already implicitly needs this logic — it's currently duplicated between is_game_over and get_all_valid_moves in AutomatedGame
-
-
-6. Demonstration (9 points)
-Submit a video of no more than five minutes, clearly demonstrating the following features.
-(a) A manual game until the game is over for English board
-(b) A manual game until the game is over for Hexagon board
-(c) An automated game until the game is over
-(d) A manual game with periodic randomization of states until the game is over
-(e) Some automated unit tests for the manual game mode
-(f) Some automated unit tests for the automated game mode
-
-my tests just say okay - what do i do to show this?

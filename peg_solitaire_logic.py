@@ -12,6 +12,10 @@ class PegSolitaireBase:
         """Return a copy of the board to enforce read-only encapsulation."""
         return [row[:] for row in self._board]
 
+    def set_board(self, board_state):
+        """Set the board state directly (used for replaying randomized states)."""
+        self._board = [row[:] for row in board_state]
+
     def randomize_board(self):
         """Randomize the board state to decouple it from GUI logic."""
         for r in range(self.size):
