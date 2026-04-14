@@ -13,3 +13,4 @@ will open said folder and replay any game from a txt file selected.
 just "no moves remaining" which should display you lost if there's still pegs on the board. Make sure that's fixed in general and 
 as well for the replay and replay notation. 
 
+3. Can you help me word the acceptance criterion mentioned in the third table (within google doc)
